@@ -25,14 +25,12 @@ public class UserDAOImpl implements UserDAO {
 		System.out.println("UserDAOImpl..constructed...");
 	}
 
-
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<User> getAll(int offset, int count) {
 		Session session = this.sessionFactory.getCurrentSession();
 		List<User> countryList = session.createQuery("from User").list();
 		  return countryList;
-		
 	}
 
 	@Override
