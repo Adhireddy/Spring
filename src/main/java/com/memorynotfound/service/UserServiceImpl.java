@@ -14,15 +14,6 @@ public class UserServiceImpl implements UserService {
 	@Autowired
     private UserDAO userdao;
 
-	
-   // private static final AtomicInteger counter = new AtomicInteger();
-   /* static List<User> users = new ArrayList<User>(
-            Arrays.asList(
-                    new User(counter.incrementAndGet(), "Daenerys Targaryen","add@gmail.com",24),
-                    new User(counter.incrementAndGet(), "John Snow","mail@mail.com",34),
-                    new User(counter.incrementAndGet(), "Arya Stark","arya@mail.com",45),
-                    new User(counter.incrementAndGet(), "Cersei Baratheon","cersei@mailcom",56)));*/
-
     @SuppressWarnings("unchecked")
     @Override
     public List<User> getAll(int offset, int count) {
